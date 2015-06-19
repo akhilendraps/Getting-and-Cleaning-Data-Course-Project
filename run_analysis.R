@@ -1,22 +1,16 @@
-setwd("C:\\Users\\akhilendrapratap\\Documents\\Data science notes\\R Course\\getdata-projectfiles-UCI HAR Dataset\\UCI HAR Dataset\\test")
-
-
-#create two data frame for test files
+#create data frame for test files
 xtest<-read.table("x_test.txt",header=FALSE)
 ytest<-read.table("y_test.txt",header=FALSE)
 subtest<-read.table("subject_test.txt",header=FALSE)
 
+#create data frame for train files
 
-
-setwd("C:\\Users\\akhilendrapratap\\Documents\\Data science notes\\R Course\\getdata-projectfiles-UCI HAR Dataset\\UCI HAR Dataset\\train")
 
 xtrain<- read.table("x_train.txt",header=FALSE)
 ytrain<- read.table("y_train.txt",header=FALSE)
 subtrain<-read.table("subject_train.txt",header=FALSE)
 
-
-
-setwd("C:\\Users\\akhilendrapratap\\Documents\\Data science notes\\R Course\\getdata-projectfiles-UCI HAR Dataset\\UCI HAR Dataset")
+#features and activities files
 
 
 meansd<-read.table("features.txt",header=FALSE)
